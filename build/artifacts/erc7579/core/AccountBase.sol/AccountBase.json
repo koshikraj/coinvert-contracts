@@ -1,0 +1,29 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AccountBase",
+  "sourceName": "erc7579/core/AccountBase.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "AccountAccessUnauthorized",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "entryPoint",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608080604052346013576088908160198239f35b600080fdfe6080806040526004361015601257600080fd5b600090813560e01c63b0d691fe14602857600080fd5b34604e5781600319360112604e57806f71727de22e5e9d8baf0edac6f37da03260209252f35b5080fdfea2646970667358221220bb1f5b3bc78484970c37e66d83f458b1b0b971b54972003ced359a17f179b9b564736f6c63430008190033",
+  "deployedBytecode": "0x6080806040526004361015601257600080fd5b600090813560e01c63b0d691fe14602857600080fd5b34604e5781600319360112604e57806f71727de22e5e9d8baf0edac6f37da03260209252f35b5080fdfea2646970667358221220bb1f5b3bc78484970c37e66d83f458b1b0b971b54972003ced359a17f179b9b564736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

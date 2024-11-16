@@ -1,0 +1,35 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ExecutionHelper",
+  "sourceName": "erc7579/core/ExecutionHelper.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ExecutionFailed",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "batchExecutionindex",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "result",
+          "type": "bytes"
+        }
+      ],
+      "name": "TryExecuteUnsuccessful",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x60808060405234601357603a908160198239f35b600080fdfe600080fdfea2646970667358221220922247394798f9f9586048bd62f3c5a8c2d309c974fb4ae04f0d5a313ce20a3664736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea2646970667358221220922247394798f9f9586048bd62f3c5a8c2d309c974fb4ae04f0d5a313ce20a3664736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

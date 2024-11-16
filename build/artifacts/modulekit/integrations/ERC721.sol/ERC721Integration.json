@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ERC721Integration",
+  "sourceName": "modulekit/integrations/ERC721.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea26469706673582212209a3087882dfa9a10497303bc8c78c1420e8b3987ab6ae377d0c5d7462bd21d8564736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea26469706673582212209a3087882dfa9a10497303bc8c78c1420e8b3987ab6ae377d0c5d7462bd21d8564736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

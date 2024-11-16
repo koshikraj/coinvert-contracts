@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "HookManager",
+  "sourceName": "erc7579/core/HookManager.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "currentHook",
+          "type": "address"
+        }
+      ],
+      "name": "HookAlreadyInstalled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "HookPostCheckFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "getActiveHook",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "hook",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

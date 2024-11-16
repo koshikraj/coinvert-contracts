@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "UniswapV3Integration",
+  "sourceName": "contracts/integrations/Uniswap.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea26469706673582212205882aa82c7a182d3c49d246b94f60e37e45985f2356e6063bf5e3e44950a716f64736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea26469706673582212205882aa82c7a182d3c49d246b94f60e37e45985f2356e6063bf5e3e44950a716f64736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

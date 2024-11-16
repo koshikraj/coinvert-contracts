@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SignatureCheckerLib",
+  "sourceName": "solady/utils/SignatureCheckerLib.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea26469706673582212201aee0b6f8e6205512bb768266395d0174df12c2b71ea25966f6644ddd56dfc4364736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea26469706673582212201aee0b6f8e6205512bb768266395d0174df12c2b71ea25966f6644ddd56dfc4364736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

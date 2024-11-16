@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ISignatureValidatorConstants",
+  "sourceName": "@safe-global/safe-contracts/contracts/interfaces/ISignatureValidator.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601357603a908160198239f35b600080fdfe600080fdfea2646970667358221220cd5facd2bfca65921112799d16c38bed035bb6c8222d8c9963858d5d98d513ae64736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea2646970667358221220cd5facd2bfca65921112799d16c38bed035bb6c8222d8c9963858d5d98d513ae64736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

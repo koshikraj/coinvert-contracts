@@ -1,0 +1,732 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ISafe7579",
+  "sourceName": "contracts/safe7579/ISafe7579.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "AccountInitializationFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "msgSig",
+          "type": "bytes4"
+        }
+      ],
+      "name": "FallbackInstalled",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "currentHook",
+          "type": "address"
+        }
+      ],
+      "name": "HookAlreadyInstalled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "HookPostCheckFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InitializerError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "msgSig",
+          "type": "bytes4"
+        }
+      ],
+      "name": "InvalidFallbackHandler",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidHookType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidInput",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "module",
+          "type": "address"
+        }
+      ],
+      "name": "InvalidModule",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LinkedListError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "msgSig",
+          "type": "bytes4"
+        }
+      ],
+      "name": "NoFallbackHandler",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "CallType",
+          "name": "callType",
+          "type": "bytes1"
+        }
+      ],
+      "name": "UnsupportedCallType",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "ExecType",
+          "name": "execType",
+          "type": "bytes1"
+        }
+      ],
+      "name": "UnsupportedExecType",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "moduleTypeId",
+          "type": "uint256"
+        }
+      ],
+      "name": "UnsupportedModuleType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ValidatorStorageHelperError",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "smartAccount",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "contract IERC7484",
+          "name": "registry",
+          "type": "address"
+        }
+      ],
+      "name": "ERC7484RegistryConfigured",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "moduleTypeId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "module",
+          "type": "address"
+        }
+      ],
+      "name": "ModuleInstalled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "moduleTypeId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "module",
+          "type": "address"
+        }
+      ],
+      "name": "ModuleUninstalled",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "accountId",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "accountImplementationId",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "domainSeparator",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "ModeCode",
+          "name": "mode",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "executionCalldata",
+          "type": "bytes"
+        }
+      ],
+      "name": "execute",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "ModeCode",
+          "name": "mode",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "executionCalldata",
+          "type": "bytes"
+        }
+      ],
+      "name": "executeFromExecutor",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "returnDatas",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getActiveHook",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "hook",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "selector",
+          "type": "bytes4"
+        }
+      ],
+      "name": "getActiveHook",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "hook",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "cursor",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "size",
+          "type": "uint256"
+        }
+      ],
+      "name": "getExecutorsPaginated",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "array",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "next",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "safe",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        }
+      ],
+      "name": "getNonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "start",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pageSize",
+          "type": "uint256"
+        }
+      ],
+      "name": "getValidatorPaginated",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "array",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "next",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "module",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct ModuleInit[]",
+          "name": "validators",
+          "type": "tuple[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "module",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct ModuleInit[]",
+          "name": "executors",
+          "type": "tuple[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "module",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct ModuleInit[]",
+          "name": "fallbacks",
+          "type": "tuple[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "module",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct ModuleInit[]",
+          "name": "hooks",
+          "type": "tuple[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "contract IERC7484",
+              "name": "registry",
+              "type": "address"
+            },
+            {
+              "internalType": "address[]",
+              "name": "attesters",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint8",
+              "name": "threshold",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct RegistryInit",
+          "name": "registryInit",
+          "type": "tuple"
+        }
+      ],
+      "name": "initializeAccount",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "moduleType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "module",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initData",
+          "type": "bytes"
+        }
+      ],
+      "name": "installModule",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "moduleType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "module",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "additionalContext",
+          "type": "bytes"
+        }
+      ],
+      "name": "isModuleInstalled",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "isValidSignature",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "magicValue",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "module",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct ModuleInit[]",
+          "name": "validators",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "launchpadValidators",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC7484",
+          "name": "registry",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "attesters",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint8",
+          "name": "threshold",
+          "type": "uint8"
+        }
+      ],
+      "name": "setRegistry",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "ModeCode",
+          "name": "encodedMode",
+          "type": "bytes32"
+        }
+      ],
+      "name": "supportsExecutionMode",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "supported",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "moduleTypeId",
+          "type": "uint256"
+        }
+      ],
+      "name": "supportsModule",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "moduleType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "module",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "deInitData",
+          "type": "bytes"
+        }
+      ],
+      "name": "uninstallModule",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initCode",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "accountGasLimits",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "preVerificationGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "gasFees",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "paymasterAndData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct PackedUserOperation",
+          "name": "userOp",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "userOpHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "missingAccountFunds",
+          "type": "uint256"
+        }
+      ],
+      "name": "validateUserOp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "packedValidSig",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

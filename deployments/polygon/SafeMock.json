@@ -1,0 +1,366 @@
+{
+  "address": "0x963E976259922a9143Ad8Ec1beA50aD712F4AD0a",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "dataHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "checkSignatures",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint8",
+          "name": "operation",
+          "type": "uint8"
+        }
+      ],
+      "name": "execTransaction",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint8",
+          "name": "operation",
+          "type": "uint8"
+        }
+      ],
+      "name": "execTransactionFromModule",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint8",
+          "name": "operation",
+          "type": "uint8"
+        }
+      ],
+      "name": "execTransactionFromModuleReturnData",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "success",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "returnData",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "fallbackHandler",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getChainId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "modules",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_fallbackHandler",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_module",
+          "type": "address"
+        }
+      ],
+      "name": "setup",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "singleton",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0x2799af03f6a6137cbe3fc1df6fa52c375ddc9cebf0a964844c3a8c90b5281d94",
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0x814a545d0F39Ae9Fa190c92968F3e1441952FB2C",
+    "contractAddress": null,
+    "transactionIndex": 28,
+    "gasUsed": "527424",
+    "logsBloom": "0x00020000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000000000000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000008000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000000000000000000000100002000000000000000000000000000000300000000000000000000000000000000000100000",
+    "blockHash": "0x88513772ddd9594c459733d242eea7f90f19fd7979e69730bfb96ff51f925dd9",
+    "transactionHash": "0x2799af03f6a6137cbe3fc1df6fa52c375ddc9cebf0a964844c3a8c90b5281d94",
+    "logs": [
+      {
+        "transactionIndex": 28,
+        "blockNumber": 62607945,
+        "transactionHash": "0x2799af03f6a6137cbe3fc1df6fa52c375ddc9cebf0a964844c3a8c90b5281d94",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x000000000000000000000000814a545d0f39ae9fa190c92968f3e1441952fb2c",
+          "0x0000000000000000000000001b0840519a581f3779d0a10b77593d6d3894a76a"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000038404617624000000000000000000000000000000000000000000000000000085f70a522aa59d9000000000000000000000000000000000000000000004a3602fc5a2ad4da3a2b0000000000000000000000000000000000000000000000000827305f0b4819d9000000000000000000000000000000000000000000004a3603349a70ec3c7a2b",
+        "logIndex": 176,
+        "blockHash": "0x88513772ddd9594c459733d242eea7f90f19fd7979e69730bfb96ff51f925dd9"
+      }
+    ],
+    "blockNumber": 62607945,
+    "cumulativeGasUsed": "5489989",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "a82b77a0232f76482f92325a80c29db9",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.25+commit.b61c2a91\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"dataHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"signature\",\"type\":\"bytes\"}],\"name\":\"checkSignatures\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"internalType\":\"uint8\",\"name\":\"operation\",\"type\":\"uint8\"}],\"name\":\"execTransaction\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"internalType\":\"uint8\",\"name\":\"operation\",\"type\":\"uint8\"}],\"name\":\"execTransactionFromModule\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"internalType\":\"uint8\",\"name\":\"operation\",\"type\":\"uint8\"}],\"name\":\"execTransactionFromModuleReturnData\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"returnData\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"fallbackHandler\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getChainId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"modules\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nonce\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_fallbackHandler\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_module\",\"type\":\"address\"}],\"name\":\"setup\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"singleton\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/SafeMock.sol\":\"SafeMock\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[],\"viaIR\":true},\"sources\":{\"@account-abstraction/contracts/core/Helpers.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\npragma solidity ^0.8.23;\\n\\n/* solhint-disable no-inline-assembly */\\n\\n\\n /*\\n  * For simulation purposes, validateUserOp (and validatePaymasterUserOp)\\n  * must return this value in case of signature failure, instead of revert.\\n  */\\nuint256 constant SIG_VALIDATION_FAILED = 1;\\n\\n\\n/*\\n * For simulation purposes, validateUserOp (and validatePaymasterUserOp)\\n * return this value on success.\\n */\\nuint256 constant SIG_VALIDATION_SUCCESS = 0;\\n\\n\\n/**\\n * Returned data from validateUserOp.\\n * validateUserOp returns a uint256, which is created by `_packedValidationData` and\\n * parsed by `_parseValidationData`.\\n * @param aggregator  - address(0) - The account validated the signature by itself.\\n *                      address(1) - The account failed to validate the signature.\\n *                      otherwise - This is an address of a signature aggregator that must\\n *                                  be used to validate the signature.\\n * @param validAfter  - This UserOp is valid only after this timestamp.\\n * @param validaUntil - This UserOp is valid only up to this timestamp.\\n */\\nstruct ValidationData {\\n    address aggregator;\\n    uint48 validAfter;\\n    uint48 validUntil;\\n}\\n\\n/**\\n * Extract sigFailed, validAfter, validUntil.\\n * Also convert zero validUntil to type(uint48).max.\\n * @param validationData - The packed validation data.\\n */\\nfunction _parseValidationData(\\n    uint256 validationData\\n) pure returns (ValidationData memory data) {\\n    address aggregator = address(uint160(validationData));\\n    uint48 validUntil = uint48(validationData >> 160);\\n    if (validUntil == 0) {\\n        validUntil = type(uint48).max;\\n    }\\n    uint48 validAfter = uint48(validationData >> (48 + 160));\\n    return ValidationData(aggregator, validAfter, validUntil);\\n}\\n\\n/**\\n * Helper to pack the return value for validateUserOp.\\n * @param data - The ValidationData to pack.\\n */\\nfunction _packValidationData(\\n    ValidationData memory data\\n) pure returns (uint256) {\\n    return\\n        uint160(data.aggregator) |\\n        (uint256(data.validUntil) << 160) |\\n        (uint256(data.validAfter) << (160 + 48));\\n}\\n\\n/**\\n * Helper to pack the return value for validateUserOp, when not using an aggregator.\\n * @param sigFailed  - True for signature failure, false for success.\\n * @param validUntil - Last timestamp this UserOperation is valid (or zero for infinite).\\n * @param validAfter - First timestamp this UserOperation is valid.\\n */\\nfunction _packValidationData(\\n    bool sigFailed,\\n    uint48 validUntil,\\n    uint48 validAfter\\n) pure returns (uint256) {\\n    return\\n        (sigFailed ? 1 : 0) |\\n        (uint256(validUntil) << 160) |\\n        (uint256(validAfter) << (160 + 48));\\n}\\n\\n/**\\n * keccak function over calldata.\\n * @dev copy calldata into memory, do keccak and drop allocated memory. Strangely, this is more efficient than letting solidity do it.\\n */\\n    function calldataKeccak(bytes calldata data) pure returns (bytes32 ret) {\\n        assembly (\\\"memory-safe\\\") {\\n            let mem := mload(0x40)\\n            let len := data.length\\n            calldatacopy(mem, data.offset, len)\\n            ret := keccak256(mem, len)\\n        }\\n    }\\n\\n\\n/**\\n * The minimum of two numbers.\\n * @param a - First number.\\n * @param b - Second number.\\n */\\n    function min(uint256 a, uint256 b) pure returns (uint256) {\\n        return a < b ? a : b;\\n    }\\n\",\"keccak256\":\"0x6247e011a6cb0b263b3aa098822977181674d91b62e5bdfe04c6e66f72da25d6\",\"license\":\"GPL-3.0\"},\"@account-abstraction/contracts/core/UserOperationLib.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\npragma solidity ^0.8.23;\\n\\n/* solhint-disable no-inline-assembly */\\n\\nimport \\\"../interfaces/PackedUserOperation.sol\\\";\\nimport {calldataKeccak, min} from \\\"./Helpers.sol\\\";\\n\\n/**\\n * Utility functions helpful when working with UserOperation structs.\\n */\\nlibrary UserOperationLib {\\n\\n    uint256 public constant PAYMASTER_VALIDATION_GAS_OFFSET = 20;\\n    uint256 public constant PAYMASTER_POSTOP_GAS_OFFSET = 36;\\n    uint256 public constant PAYMASTER_DATA_OFFSET = 52;\\n    /**\\n     * Get sender from user operation data.\\n     * @param userOp - The user operation data.\\n     */\\n    function getSender(\\n        PackedUserOperation calldata userOp\\n    ) internal pure returns (address) {\\n        address data;\\n        //read sender from userOp, which is first userOp member (saves 800 gas...)\\n        assembly {\\n            data := calldataload(userOp)\\n        }\\n        return address(uint160(data));\\n    }\\n\\n    /**\\n     * Relayer/block builder might submit the TX with higher priorityFee,\\n     * but the user should not pay above what he signed for.\\n     * @param userOp - The user operation data.\\n     */\\n    function gasPrice(\\n        PackedUserOperation calldata userOp\\n    ) internal view returns (uint256) {\\n        unchecked {\\n            (uint256 maxPriorityFeePerGas, uint256 maxFeePerGas) = unpackUints(userOp.gasFees);\\n            if (maxFeePerGas == maxPriorityFeePerGas) {\\n                //legacy mode (for networks that don't support basefee opcode)\\n                return maxFeePerGas;\\n            }\\n            return min(maxFeePerGas, maxPriorityFeePerGas + block.basefee);\\n        }\\n    }\\n\\n    /**\\n     * Pack the user operation data into bytes for hashing.\\n     * @param userOp - The user operation data.\\n     */\\n    function encode(\\n        PackedUserOperation calldata userOp\\n    ) internal pure returns (bytes memory ret) {\\n        address sender = getSender(userOp);\\n        uint256 nonce = userOp.nonce;\\n        bytes32 hashInitCode = calldataKeccak(userOp.initCode);\\n        bytes32 hashCallData = calldataKeccak(userOp.callData);\\n        bytes32 accountGasLimits = userOp.accountGasLimits;\\n        uint256 preVerificationGas = userOp.preVerificationGas;\\n        bytes32 gasFees = userOp.gasFees;\\n        bytes32 hashPaymasterAndData = calldataKeccak(userOp.paymasterAndData);\\n\\n        return abi.encode(\\n            sender, nonce,\\n            hashInitCode, hashCallData,\\n            accountGasLimits, preVerificationGas, gasFees,\\n            hashPaymasterAndData\\n        );\\n    }\\n\\n    function unpackUints(\\n        bytes32 packed\\n    ) internal pure returns (uint256 high128, uint256 low128) {\\n        return (uint128(bytes16(packed)), uint128(uint256(packed)));\\n    }\\n\\n    //unpack just the high 128-bits from a packed value\\n    function unpackHigh128(bytes32 packed) internal pure returns (uint256) {\\n        return uint256(packed) >> 128;\\n    }\\n\\n    // unpack just the low 128-bits from a packed value\\n    function unpackLow128(bytes32 packed) internal pure returns (uint256) {\\n        return uint128(uint256(packed));\\n    }\\n\\n    function unpackMaxPriorityFeePerGas(PackedUserOperation calldata userOp)\\n    internal pure returns (uint256) {\\n        return unpackHigh128(userOp.gasFees);\\n    }\\n\\n    function unpackMaxFeePerGas(PackedUserOperation calldata userOp)\\n    internal pure returns (uint256) {\\n        return unpackLow128(userOp.gasFees);\\n    }\\n\\n    function unpackVerificationGasLimit(PackedUserOperation calldata userOp)\\n    internal pure returns (uint256) {\\n        return unpackHigh128(userOp.accountGasLimits);\\n    }\\n\\n    function unpackCallGasLimit(PackedUserOperation calldata userOp)\\n    internal pure returns (uint256) {\\n        return unpackLow128(userOp.accountGasLimits);\\n    }\\n\\n    function unpackPaymasterVerificationGasLimit(PackedUserOperation calldata userOp)\\n    internal pure returns (uint256) {\\n        return uint128(bytes16(userOp.paymasterAndData[PAYMASTER_VALIDATION_GAS_OFFSET : PAYMASTER_POSTOP_GAS_OFFSET]));\\n    }\\n\\n    function unpackPostOpGasLimit(PackedUserOperation calldata userOp)\\n    internal pure returns (uint256) {\\n        return uint128(bytes16(userOp.paymasterAndData[PAYMASTER_POSTOP_GAS_OFFSET : PAYMASTER_DATA_OFFSET]));\\n    }\\n\\n    function unpackPaymasterStaticFields(\\n        bytes calldata paymasterAndData\\n    ) internal pure returns (address paymaster, uint256 validationGasLimit, uint256 postOpGasLimit) {\\n        return (\\n            address(bytes20(paymasterAndData[: PAYMASTER_VALIDATION_GAS_OFFSET])),\\n            uint128(bytes16(paymasterAndData[PAYMASTER_VALIDATION_GAS_OFFSET : PAYMASTER_POSTOP_GAS_OFFSET])),\\n            uint128(bytes16(paymasterAndData[PAYMASTER_POSTOP_GAS_OFFSET : PAYMASTER_DATA_OFFSET]))\\n        );\\n    }\\n\\n    /**\\n     * Hash the user operation data.\\n     * @param userOp - The user operation data.\\n     */\\n    function hash(\\n        PackedUserOperation calldata userOp\\n    ) internal pure returns (bytes32) {\\n        return keccak256(encode(userOp));\\n    }\\n}\\n\",\"keccak256\":\"0x9d50ece985d35f82e33e5da417595c86fac10449e3d10895d08363d33aad454b\",\"license\":\"GPL-3.0\"},\"@account-abstraction/contracts/interfaces/IAccount.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\npragma solidity >=0.7.5;\\n\\nimport \\\"./PackedUserOperation.sol\\\";\\n\\ninterface IAccount {\\n    /**\\n     * Validate user's signature and nonce\\n     * the entryPoint will make the call to the recipient only if this validation call returns successfully.\\n     * signature failure should be reported by returning SIG_VALIDATION_FAILED (1).\\n     * This allows making a \\\"simulation call\\\" without a valid signature\\n     * Other failures (e.g. nonce mismatch, or invalid signature format) should still revert to signal failure.\\n     *\\n     * @dev Must validate caller is the entryPoint.\\n     *      Must validate the signature and nonce\\n     * @param userOp              - The operation that is about to be executed.\\n     * @param userOpHash          - Hash of the user's request data. can be used as the basis for signature.\\n     * @param missingAccountFunds - Missing funds on the account's deposit in the entrypoint.\\n     *                              This is the minimum amount to transfer to the sender(entryPoint) to be\\n     *                              able to make the call. The excess is left as a deposit in the entrypoint\\n     *                              for future calls. Can be withdrawn anytime using \\\"entryPoint.withdrawTo()\\\".\\n     *                              In case there is a paymaster in the request (or the current deposit is high\\n     *                              enough), this value will be zero.\\n     * @return validationData       - Packaged ValidationData structure. use `_packValidationData` and\\n     *                              `_unpackValidationData` to encode and decode.\\n     *                              <20-byte> sigAuthorizer - 0 for valid signature, 1 to mark signature failure,\\n     *                                 otherwise, an address of an \\\"authorizer\\\" contract.\\n     *                              <6-byte> validUntil - Last timestamp this operation is valid. 0 for \\\"indefinite\\\"\\n     *                              <6-byte> validAfter - First timestamp this operation is valid\\n     *                                                    If an account doesn't use time-range, it is enough to\\n     *                                                    return SIG_VALIDATION_FAILED value (1) for signature failure.\\n     *                              Note that the validation code cannot use block.timestamp (or block.number) directly.\\n     */\\n    function validateUserOp(\\n        PackedUserOperation calldata userOp,\\n        bytes32 userOpHash,\\n        uint256 missingAccountFunds\\n    ) external returns (uint256 validationData);\\n}\\n\",\"keccak256\":\"0x38710bec0cb20ff4ceef46a80475b5bdabc27b7efd2687fd473db68332f61b78\",\"license\":\"GPL-3.0\"},\"@account-abstraction/contracts/interfaces/PackedUserOperation.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\npragma solidity >=0.7.5;\\n\\n/**\\n * User Operation struct\\n * @param sender                - The sender account of this request.\\n * @param nonce                 - Unique value the sender uses to verify it is not a replay.\\n * @param initCode              - If set, the account contract will be created by this constructor/\\n * @param callData              - The method call to execute on this account.\\n * @param accountGasLimits      - Packed gas limits for validateUserOp and gas limit passed to the callData method call.\\n * @param preVerificationGas    - Gas not calculated by the handleOps method, but added to the gas paid.\\n *                                Covers batch overhead.\\n * @param gasFees               - packed gas fields maxPriorityFeePerGas and maxFeePerGas - Same as EIP-1559 gas parameters.\\n * @param paymasterAndData      - If set, this field holds the paymaster address, verification gas limit, postOp gas limit and paymaster-specific extra data\\n *                                The paymaster will pay for the transaction instead of the sender.\\n * @param signature             - Sender-verified signature over the entire request, the EntryPoint address and the chain ID.\\n */\\nstruct PackedUserOperation {\\n    address sender;\\n    uint256 nonce;\\n    bytes initCode;\\n    bytes callData;\\n    bytes32 accountGasLimits;\\n    uint256 preVerificationGas;\\n    bytes32 gasFees;\\n    bytes paymasterAndData;\\n    bytes signature;\\n}\\n\",\"keccak256\":\"0x1129b46381db68eddbc5cb49e50664667b66b03c480453858e7b25eabe444359\",\"license\":\"GPL-3.0\"},\"contracts/test/SafeMock.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\n/* solhint-disable one-contract-per-file */\\npragma solidity >=0.8.0;\\n\\nimport {IAccount} from \\\"@account-abstraction/contracts/interfaces/IAccount.sol\\\";\\nimport {UserOperationLib} from \\\"@account-abstraction/contracts/core/UserOperationLib.sol\\\";\\nimport {PackedUserOperation} from \\\"@account-abstraction/contracts/interfaces/PackedUserOperation.sol\\\";\\nimport {_packValidationData} from \\\"@account-abstraction/contracts/core/Helpers.sol\\\";\\n\\ncontract SafeMock {\\n    address public singleton;\\n    address public owner;\\n    address public fallbackHandler;\\n    mapping(address => bool) public modules;\\n\\n    bytes32 private constant DOMAIN_SEPARATOR_TYPEHASH = 0x47e79534a245952e8b16893a336b85a3d9ea9fa8c573f3d803afb92a79469218;\\n\\n    uint256 public nonce;\\n\\n    constructor() {\\n        owner = msg.sender;\\n    }\\n\\n    function setup(address _fallbackHandler, address _module) public virtual {\\n        require(owner == address(0), \\\"Already setup\\\");\\n        owner = msg.sender;\\n        fallbackHandler = _fallbackHandler;\\n        modules[_module] = true;\\n    }\\n\\n\\n    function _signatureSplit(bytes memory signature) internal pure returns (uint8 v, bytes32 r, bytes32 s) {\\n        // solhint-disable-next-line no-inline-assembly\\n        assembly (\\\"memory-safe\\\") {\\n            r := mload(add(signature, 0x20))\\n            s := mload(add(signature, 0x40))\\n            v := byte(0, mload(add(signature, 0x60)))\\n        }\\n    }\\n\\n    function checkSignatures(bytes32 dataHash, bytes memory data, bytes memory signature) public view {\\n        require(dataHash == keccak256(data), \\\"Invalid data hash\\\");\\n        uint8 v;\\n        bytes32 r;\\n        bytes32 s;\\n        (v, r, s) = _signatureSplit(signature);\\n        require(\\n            // The original safe contract requires the V value to be > 30 for EIP-191 signed messages\\n            // The canonical eth V value is 27 or 28, so by adding 4 to it we get a value > 30\\n            // And when we verify the signature we subtract 4 from it\\n            owner == ecrecover(keccak256(abi.encodePacked(\\\"\\\\x19Ethereum Signed Message:\\\\n32\\\", dataHash)), v - 4, r, s),\\n            \\\"Invalid signature\\\"\\n        );\\n    }\\n\\n    function execTransactionFromModule(\\n        address payable to,\\n        uint256 value,\\n        bytes calldata data,\\n        uint8 operation\\n    ) external returns (bool success) {\\n        require(modules[msg.sender], \\\"not executing that\\\");\\n\\n        if (operation == 1) (success, ) = to.delegatecall(data);\\n        else (success, ) = to.call{value: value}(data);\\n    }\\n\\n\\n    function execTransaction(\\n        address payable to,\\n        uint256 value,\\n        bytes calldata data,\\n        uint8 operation\\n    ) external returns (bool success) {\\n\\n        if (operation == 1) (success, ) = to.delegatecall(data);\\n        else (success, ) = to.call{value: value}(data);\\n    }\\n\\n    function getChainId() public view returns (uint256) {\\n        uint256 id;\\n        /* solhint-disable no-inline-assembly */\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            id := chainid()\\n        }\\n        /* solhint-enable no-inline-assembly */\\n        return id;\\n    }\\n    \\n\\n\\n    function execTransactionFromModuleReturnData(\\n        address payable to,\\n        uint256 value,\\n        bytes calldata data,\\n        uint8 operation\\n    ) external returns (bool success, bytes memory returnData) {\\n        require(modules[msg.sender], \\\"not executing that\\\");\\n\\n        if (operation == 1) (success, returnData) = to.delegatecall(data);\\n        else (success, returnData) = to.call{value: value}(data);\\n    }\\n\\n    // solhint-disable-next-line payable-fallback,no-complex-fallback\\n    fallback() external payable {\\n        // solhint-disable-next-line no-inline-assembly\\n        assembly (\\\"memory-safe\\\") {\\n            let handler := sload(fallbackHandler.slot)\\n            if iszero(handler) {\\n                return(0, 0)\\n            }\\n\\n            let ptr := mload(0x40)\\n            calldatacopy(ptr, 0, calldatasize())\\n            // The msg.sender address is shifted to the left by 12 bytes to remove the padding\\n            // Then the address without padding is stored right after the calldata\\n            mstore(add(ptr, calldatasize()), shl(96, caller()))\\n            // Add 20 bytes for the address appended add the end\\n            let success := call(gas(), handler, 0, ptr, add(calldatasize(), 20), 0, 0)\\n            returndatacopy(ptr, 0, returndatasize())\\n            if iszero(success) {\\n                revert(ptr, returndatasize())\\n            }\\n            return(ptr, returndatasize())\\n        }\\n    }\\n\\n    receive() external payable {}\\n}\\n\\ncontract Safe4337Mock is SafeMock, IAccount {\\n    using UserOperationLib for PackedUserOperation;\\n\\n    bytes32 private constant DOMAIN_SEPARATOR_TYPEHASH = 0x47e79534a245952e8b16893a336b85a3d9ea9fa8c573f3d803afb92a79469218;\\n\\n    bytes32 private constant SAFE_OP_TYPEHASH = 0xc03dfc11d8b10bf9cf703d558958c8c42777f785d998c62060d85a4f0ef6ea7f;\\n\\n    /**\\n     * @dev A structure used internally for manually encoding a Safe operation for when computing the EIP-712 struct hash.\\n     */\\n    struct EncodedSafeOpStruct {\\n        bytes32 typeHash;\\n        address safe;\\n        uint256 nonce;\\n        bytes32 initCodeHash;\\n        bytes32 callDataHash;\\n        uint128 verificationGasLimit;\\n        uint128 callGasLimit;\\n        uint256 preVerificationGas;\\n        uint128 maxPriorityFeePerGas;\\n        uint128 maxFeePerGas;\\n        bytes32 paymasterAndDataHash;\\n        uint48 validAfter;\\n        uint48 validUntil;\\n        address entryPoint;\\n    }\\n\\n    address public immutable SUPPORTED_ENTRYPOINT;\\n\\n    constructor(address entryPoint) {\\n        SUPPORTED_ENTRYPOINT = entryPoint;\\n    }\\n\\n    /**\\n     * @notice Validates the call is initiated by the entry point.\\n     */\\n    modifier onlySupportedEntryPoint() {\\n        require(msg.sender == SUPPORTED_ENTRYPOINT, \\\"Unsupported entry point\\\");\\n        _;\\n    }\\n\\n    /// @dev Validates user operation provided by the entry point\\n    /// @inheritdoc IAccount\\n    function validateUserOp(\\n        PackedUserOperation calldata userOp,\\n        bytes32,\\n        uint256 missingAccountFunds\\n    ) external onlySupportedEntryPoint returns (uint256 validationData) {\\n        // We check the execution function signature to make sure the entryPoint can't call any other function\\n        // and make sure the execution of the user operation is handled by the module\\n        require(\\n            this.executeUserOp.selector == bytes4(userOp.callData) || this.executeUserOpWithErrorString.selector == bytes4(userOp.callData),\\n            \\\"Unsupported execution function id\\\"\\n        );\\n\\n        validationData = _validateSignatures(userOp);\\n\\n        if (missingAccountFunds != 0) {\\n            (bool success, ) = SUPPORTED_ENTRYPOINT.call{value: missingAccountFunds}(\\\"\\\");\\n            success;\\n        }\\n        return 0;\\n    }\\n\\n    /// @notice Executes user operation provided by the entry point\\n    /// @dev Reverts if unsuccessful\\n    /// @param to Destination address of the user operation.\\n    /// @param value Ether value of the user operation.\\n    /// @param data Data payload of the user operation.\\n    /// @param operation Operation type of the user operation.\\n    function executeUserOp(address to, uint256 value, bytes memory data, uint8 operation) external onlySupportedEntryPoint {\\n        bool success;\\n        if (operation == 1) (success, ) = to.delegatecall(data);\\n        else (success, ) = to.call{value: value}(data);\\n        require(success, \\\"Execution failed\\\");\\n    }\\n\\n    /// @notice Executes user operation provided by the entry point\\n    /// @dev Reverts if unsuccessful and bubbles up the error message\\n    /// @param to Destination address of the user operation.\\n    /// @param value Ether value of the user operation.\\n    /// @param data Data payload of the user operation.\\n    /// @param operation Operation type of the user operation.\\n    function executeUserOpWithErrorString(address to, uint256 value, bytes memory data, uint8 operation) external onlySupportedEntryPoint {\\n        bool success;\\n        bytes memory returnData;\\n        if (operation == 1) (success, returnData) = to.delegatecall(data);\\n        else (success, returnData) = to.call{value: value}(data);\\n        require(success, string(returnData));\\n    }\\n\\n    function domainSeparator() public view returns (bytes32) {\\n        return keccak256(abi.encode(DOMAIN_SEPARATOR_TYPEHASH, block.chainid, this));\\n    }\\n\\n    function chainId() public view returns (uint256) {\\n        return block.chainid;\\n    }\\n\\n    /**\\n     * @notice Returns the 32-byte Safe operation hash to be signed by owners for the specified ERC-4337 user operation.\\n     * @dev The Safe operation timestamps are pre-pended to the signature bytes as `abi.encodePacked(validAfter, validUntil, signatures)`.\\n     * @param userOp The ERC-4337 user operation.\\n     * @return operationHash Operation hash.\\n     */\\n    function getOperationHash(PackedUserOperation calldata userOp) external view returns (bytes32 operationHash) {\\n        (bytes memory operationData, , , ) = _getSafeOp(userOp);\\n        operationHash = keccak256(operationData);\\n    }\\n\\n    /**\\n     * @dev Validates that the user operation is correctly signed. Reverts if signatures are invalid.\\n     * @param userOp User operation struct.\\n     * @return validationData An integer indicating the result of the validation.\\n     */\\n    function _validateSignatures(PackedUserOperation calldata userOp) internal view returns (uint256 validationData) {\\n        (bytes memory operationData, uint48 validAfter, uint48 validUntil, bytes calldata signatures) = _getSafeOp(userOp);\\n        checkSignatures(keccak256(operationData), operationData, signatures);\\n        validationData = _packValidationData(false, validUntil, validAfter);\\n    }\\n\\n    /**\\n     * @dev Decodes an ERC-4337 user operation into a Safe operation.\\n     * @param userOp The ERC-4337 user operation.\\n     * @return operationData Encoded EIP-712 Safe operation data bytes used for signature verification.\\n     * @return validAfter The timestamp the user operation is valid from.\\n     * @return validUntil The timestamp the user operation is valid until.\\n     * @return signatures The Safe owner signatures extracted from the user operation.\\n     */\\n    function _getSafeOp(\\n        PackedUserOperation calldata userOp\\n    ) internal view returns (bytes memory operationData, uint48 validAfter, uint48 validUntil, bytes calldata signatures) {\\n        // Extract additional Safe operation fields from the user operation signature which is encoded as:\\n        // `abi.encodePacked(validAfter, validUntil, signatures)`\\n        {\\n            bytes calldata sig = userOp.signature;\\n            validAfter = uint48(bytes6(sig[0:6]));\\n            validUntil = uint48(bytes6(sig[6:12]));\\n            signatures = sig[12:];\\n        }\\n\\n        // It is important that **all** user operation fields are represented in the `SafeOp` data somehow, to prevent\\n        // user operations from being submitted that do not fully respect the user preferences. The only exception is\\n        // the `signature` bytes. Note that even `initCode` needs to be represented in the operation data, otherwise\\n        // it can be replaced with a more expensive initialization that would charge the user additional fees.\\n        {\\n            // In order to work around Solidity \\\"stack too deep\\\" errors related to too many stack variables, manually\\n            // encode the `SafeOp` fields into a memory `struct` for computing the EIP-712 struct-hash. This works\\n            // because the `EncodedSafeOpStruct` struct has no \\\"dynamic\\\" fields so its memory layout is identical to the\\n            // result of `abi.encode`-ing the individual fields.\\n            EncodedSafeOpStruct memory encodedSafeOp = EncodedSafeOpStruct({\\n                typeHash: SAFE_OP_TYPEHASH,\\n                safe: userOp.sender,\\n                nonce: userOp.nonce,\\n                initCodeHash: keccak256(userOp.initCode),\\n                callDataHash: keccak256(userOp.callData),\\n                verificationGasLimit: uint128(userOp.unpackVerificationGasLimit()),\\n                callGasLimit: uint128(userOp.unpackCallGasLimit()),\\n                preVerificationGas: userOp.preVerificationGas,\\n                maxPriorityFeePerGas: uint128(userOp.unpackMaxPriorityFeePerGas()),\\n                maxFeePerGas: uint128(userOp.unpackMaxFeePerGas()),\\n                paymasterAndDataHash: keccak256(userOp.paymasterAndData),\\n                validAfter: validAfter,\\n                validUntil: validUntil,\\n                entryPoint: SUPPORTED_ENTRYPOINT\\n            });\\n\\n            bytes32 safeOpStructHash;\\n            // solhint-disable-next-line no-inline-assembly\\n            assembly (\\\"memory-safe\\\") {\\n                // Since the `encodedSafeOp` value's memory layout is identical to the result of `abi.encode`-ing the\\n                // individual `SafeOp` fields, we can pass it directly to `keccak256`. Additionally, there are 13\\n                // 32-byte fields to hash, for a length of `14 * 32 = 448` bytes.\\n                safeOpStructHash := keccak256(encodedSafeOp, 448)\\n            }\\n\\n            operationData = abi.encodePacked(bytes1(0x19), bytes1(0x01), domainSeparator(), safeOpStructHash);\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x134c9ec84e3319f9906a77a885275cbe20c068bf8907cfac783bd0b204082164\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x60808060405234602757600180546001600160a01b03191633179055610829908161002d8239f35b600080fdfe608060409080825260049081361015610054575b505036156100525760025490811561005257600080915192368285373360601b36850152838260143601925af13d6000833e1561004e573d90f35b3d90fd5b005b600091823560e01c91826329238ee4146105e3575081632d34ba79146105125781633408e470146104f7578163468721a7146104615781635229073f1461037c5781638da5cb5b14610354578163934f3a111461018d578163a8ee49fe14610151578163affed0e01461012e57508063b62654fb146101085763eed2f252146100dd5780610013565b90346101045781600319360112610104576020906001600160a01b03600254169051908152f35b5080fd5b5090346101045781600319360112610104576001600160a01b0360209254169051908152f35b8391503461014d578260031936011261014d5760209250549051908152f35b8280fd5b8284346101045760203660031901126101045760ff816020936001600160a01b0361017a6106c7565b1681526003855220541690519015158152f35b9050823461014d57600319906060368301126103505767ffffffffffffffff91833560243584811161034c576101c69036908701610731565b93604435818111610348576101de9036908801610731565b85516020809701208303610306578581015192606086830151920151891a936001600160a01b03948560015416968851938a8501907f19457468657265756d205369676e6564204d6573736167653a0a3332000000008252603c860152603c85526060850196858810908811176102f357868a528451902091019060ff82116102e057608093869360ff8e979460c0948e9a52168683015260a0820152015282805260015afa156102d65785511603610295578380f35b60649350519162461bcd60e51b8352820152601160248201527f496e76616c6964207369676e61747572650000000000000000000000000000006044820152fd5b82513d87823e3d90fd5b60248c60118d634e487b7160e01b835252fd5b60248d60418e634e487b7160e01b835252fd5b6064878787519162461bcd60e51b8352820152601160248201527f496e76616c6964206461746120686173680000000000000000000000000000006044820152fd5b8780fd5b8680fd5b8380fd5b8284346101045781600319360112610104576020906001600160a01b03600154169051908152f35b82843461010457818061038e36610652565b9793929091338552600160ff60209a60036020526103b0828c8a2054166107a8565b1603610432576001600160a01b039150828851938492833781018581520392165af4926103db610778565b9391939290935b81519485931515845282602085015284518093850152815b83811061041b57505060608094508284010152601f80199101168101030190f35b8086018201518782016060015286945081016103fa565b6001600160a01b0390838951948592833781018681520393165af192610456610778565b9391939290936103e2565b8284346101045781602092600160ff61047936610652565b8796929394969591955033885260038b52610498828b8a2054166107a8565b16036104cd576001600160a01b039150828751938492833781018581520392165af46104c2610778565b50905b519015158152f35b6001600160a01b0390838851948592833781018681520393165af16104f0610778565b50906104c5565b82843461010457816003193601126101045760209051468152f35b8391503461014d578160031936011261014d5761052d6106c7565b90602435916001600160a01b03908184168094036105df576001549282841661059c57507fffffffffffffffffffffffff000000000000000000000000000000000000000092833391161760015516906002541617600255825260036020528120600160ff1982541617905580f35b606490602087519162461bcd60e51b8352820152600d60248201527f416c7265616479207365747570000000000000000000000000000000000000006044820152fd5b8580fd5b8484913461014d579180602093600160ff6105fd36610652565b939690959194909316036106305750506001600160a01b0390828751938492833781018581520392165af46104c2610778565b91908381946001600160a01b0393833781018681520393165af16104f0610778565b9060806003198301126106c2576004356001600160a01b03811681036106c257916024359160443567ffffffffffffffff928382116106c257806023830112156106c25781600401359384116106c257602484830101116106c257602401919060643560ff811681036106c25790565b600080fd5b600435906001600160a01b03821682036106c257565b90601f8019910116810190811067ffffffffffffffff8211176106ff57604052565b634e487b7160e01b600052604160045260246000fd5b67ffffffffffffffff81116106ff57601f01601f191660200190565b81601f820112156106c25780359061074882610715565b9261075660405194856106dd565b828452602083830101116106c257816000926020809301838601378301015290565b3d156107a3573d9061078982610715565b9161079760405193846106dd565b82523d6000602084013e565b606090565b156107af57565b606460405162461bcd60e51b815260206004820152601260248201527f6e6f7420657865637574696e67207468617400000000000000000000000000006044820152fdfea264697066735822122089015c21347637249a5656e0eff916fe1da71f1f5361ae4693a2aa47352746fc64736f6c63430008190033",
+  "deployedBytecode": "0x608060409080825260049081361015610054575b505036156100525760025490811561005257600080915192368285373360601b36850152838260143601925af13d6000833e1561004e573d90f35b3d90fd5b005b600091823560e01c91826329238ee4146105e3575081632d34ba79146105125781633408e470146104f7578163468721a7146104615781635229073f1461037c5781638da5cb5b14610354578163934f3a111461018d578163a8ee49fe14610151578163affed0e01461012e57508063b62654fb146101085763eed2f252146100dd5780610013565b90346101045781600319360112610104576020906001600160a01b03600254169051908152f35b5080fd5b5090346101045781600319360112610104576001600160a01b0360209254169051908152f35b8391503461014d578260031936011261014d5760209250549051908152f35b8280fd5b8284346101045760203660031901126101045760ff816020936001600160a01b0361017a6106c7565b1681526003855220541690519015158152f35b9050823461014d57600319906060368301126103505767ffffffffffffffff91833560243584811161034c576101c69036908701610731565b93604435818111610348576101de9036908801610731565b85516020809701208303610306578581015192606086830151920151891a936001600160a01b03948560015416968851938a8501907f19457468657265756d205369676e6564204d6573736167653a0a3332000000008252603c860152603c85526060850196858810908811176102f357868a528451902091019060ff82116102e057608093869360ff8e979460c0948e9a52168683015260a0820152015282805260015afa156102d65785511603610295578380f35b60649350519162461bcd60e51b8352820152601160248201527f496e76616c6964207369676e61747572650000000000000000000000000000006044820152fd5b82513d87823e3d90fd5b60248c60118d634e487b7160e01b835252fd5b60248d60418e634e487b7160e01b835252fd5b6064878787519162461bcd60e51b8352820152601160248201527f496e76616c6964206461746120686173680000000000000000000000000000006044820152fd5b8780fd5b8680fd5b8380fd5b8284346101045781600319360112610104576020906001600160a01b03600154169051908152f35b82843461010457818061038e36610652565b9793929091338552600160ff60209a60036020526103b0828c8a2054166107a8565b1603610432576001600160a01b039150828851938492833781018581520392165af4926103db610778565b9391939290935b81519485931515845282602085015284518093850152815b83811061041b57505060608094508284010152601f80199101168101030190f35b8086018201518782016060015286945081016103fa565b6001600160a01b0390838951948592833781018681520393165af192610456610778565b9391939290936103e2565b8284346101045781602092600160ff61047936610652565b8796929394969591955033885260038b52610498828b8a2054166107a8565b16036104cd576001600160a01b039150828751938492833781018581520392165af46104c2610778565b50905b519015158152f35b6001600160a01b0390838851948592833781018681520393165af16104f0610778565b50906104c5565b82843461010457816003193601126101045760209051468152f35b8391503461014d578160031936011261014d5761052d6106c7565b90602435916001600160a01b03908184168094036105df576001549282841661059c57507fffffffffffffffffffffffff000000000000000000000000000000000000000092833391161760015516906002541617600255825260036020528120600160ff1982541617905580f35b606490602087519162461bcd60e51b8352820152600d60248201527f416c7265616479207365747570000000000000000000000000000000000000006044820152fd5b8580fd5b8484913461014d579180602093600160ff6105fd36610652565b939690959194909316036106305750506001600160a01b0390828751938492833781018581520392165af46104c2610778565b91908381946001600160a01b0393833781018681520393165af16104f0610778565b9060806003198301126106c2576004356001600160a01b03811681036106c257916024359160443567ffffffffffffffff928382116106c257806023830112156106c25781600401359384116106c257602484830101116106c257602401919060643560ff811681036106c25790565b600080fd5b600435906001600160a01b03821682036106c257565b90601f8019910116810190811067ffffffffffffffff8211176106ff57604052565b634e487b7160e01b600052604160045260246000fd5b67ffffffffffffffff81116106ff57601f01601f191660200190565b81601f820112156106c25780359061074882610715565b9261075660405194856106dd565b828452602083830101116106c257816000926020809301838601378301015290565b3d156107a3573d9061078982610715565b9161079760405193846106dd565b82523d6000602084013e565b606090565b156107af57565b606460405162461bcd60e51b815260206004820152601260248201527f6e6f7420657865637574696e67207468617400000000000000000000000000006044820152fdfea264697066735822122089015c21347637249a5656e0eff916fe1da71f1f5361ae4693a2aa47352746fc64736f6c63430008190033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7860,
+        "contract": "contracts/test/SafeMock.sol:SafeMock",
+        "label": "singleton",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 7862,
+        "contract": "contracts/test/SafeMock.sol:SafeMock",
+        "label": "owner",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 7864,
+        "contract": "contracts/test/SafeMock.sol:SafeMock",
+        "label": "fallbackHandler",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_address"
+      },
+      {
+        "astId": 7868,
+        "contract": "contracts/test/SafeMock.sol:SafeMock",
+        "label": "modules",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 7873,
+        "contract": "contracts/test/SafeMock.sol:SafeMock",
+        "label": "nonce",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

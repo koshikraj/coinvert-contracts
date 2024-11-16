@@ -1,0 +1,6368 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/module-bases/ERC7579ValidatorBase.sol": {
+      "lastModificationDate": 1725110472404,
+      "contentHash": "1eded1b794dce5c3290ff55c686e17a1",
+      "sourceName": "contracts/module-bases/ERC7579ValidatorBase.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@account-abstraction/contracts/interfaces/PackedUserOperation.sol",
+        "@account-abstraction/contracts/core/Helpers.sol",
+        "./ERC7579ModuleBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ERC7579ValidatorBase"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/lib/ExecutionLib.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "55853d176e51df104eff6bbf3004849f",
+      "sourceName": "contracts/safe7579/lib/ExecutionLib.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC7579Account.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ExecutionLib"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/module-bases/ERC7579ExecutorBase.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "53d7b27923a33bda49360a963de972af",
+      "sourceName": "contracts/module-bases/ERC7579ExecutorBase.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../safe7579/external/ERC7579.sol",
+        "./ERC7579ModuleBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ERC7579ExecutorBase"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/integrations/Uniswap.sol": {
+      "lastModificationDate": 1728966486097,
+      "contentHash": "7e93cdba17f7bf898b1390790c3616c7",
+      "sourceName": "contracts/integrations/Uniswap.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SwapRouterConfigLibrary.sol",
+        "./ISwapRouter.sol",
+        "forge-std/interfaces/IERC20.sol",
+        "modulekit/Integrations.sol",
+        "modulekit/Accounts.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "UniswapV3Integration"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/Integrations.sol": {
+      "lastModificationDate": 1725101997891,
+      "contentHash": "8e5be1f6941a2cd9e57d9050a074f10f",
+      "sourceName": "modulekit/Integrations.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./integrations/ERC20.sol",
+        "./integrations/ERC721.sol",
+        "./integrations/ERC4626.sol",
+        "./integrations/uniswap/v3/Uniswap.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/forge-std/src/interfaces/IERC20.sol": {
+      "lastModificationDate": 1725101953535,
+      "contentHash": "8099161d518e5862a76750349d58e801",
+      "sourceName": "forge-std/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/Accounts.sol": {
+      "lastModificationDate": 1725101997559,
+      "contentHash": "81931b40ff90dca69455214f3e526397",
+      "sourceName": "modulekit/Accounts.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./external/ERC7579.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/forge-std/src/interfaces/IERC4626.sol": {
+      "lastModificationDate": 1725101953539,
+      "contentHash": "1e7c5a728a8484c46b7a6c5851ffa45b",
+      "sourceName": "forge-std/interfaces/IERC4626.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IERC4626"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/UD2x18.sol": {
+      "lastModificationDate": 1725101997735,
+      "contentHash": "71feb4e30bbc21e5e85fe3109fbd5917",
+      "sourceName": "@prb/math/UD2x18.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ud2x18/Casting.sol",
+        "./ud2x18/Constants.sol",
+        "./ud2x18/Errors.sol",
+        "./ud2x18/ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/solady/src/utils/SignatureCheckerLib.sol": {
+      "lastModificationDate": 1725101956503,
+      "contentHash": "1fc67a8a216a8cb5e01664c8963efe9c",
+      "sourceName": "solady/utils/SignatureCheckerLib.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "SignatureCheckerLib"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/solady/src/utils/ECDSA.sol": {
+      "lastModificationDate": 1725101955435,
+      "contentHash": "5a2f33f33f53520b3dc1797af7dd00ae",
+      "sourceName": "solady/utils/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@account-abstraction/contracts/core/UserOperationLib.sol": {
+      "lastModificationDate": 1725101952951,
+      "contentHash": "49e8ce45c96e09cb83ff7d1d2e72e448",
+      "sourceName": "@account-abstraction/contracts/core/UserOperationLib.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/PackedUserOperation.sol",
+        "./Helpers.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "UserOperationLib"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/UD60x18.sol": {
+      "lastModificationDate": 1725101997739,
+      "contentHash": "55aeee8a1cf7cf9fd8a0176bd06b739f",
+      "sourceName": "@prb/math/UD60x18.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ud60x18/Casting.sol",
+        "./ud60x18/Constants.sol",
+        "./ud60x18/Conversions.sol",
+        "./ud60x18/Errors.sol",
+        "./ud60x18/Helpers.sol",
+        "./ud60x18/Math.sol",
+        "./ud60x18/ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/module-bases/ERC7579ModuleBase.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "a8450d72c3d465a309e9fc0b7b695f6e",
+      "sourceName": "contracts/module-bases/ERC7579ModuleBase.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../safe7579/external/ERC7579.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ERC7579ModuleBase"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@account-abstraction/contracts/interfaces/PackedUserOperation.sol": {
+      "lastModificationDate": 1725101952775,
+      "contentHash": "6cdfe05be923cdc6051633ff1614e956",
+      "sourceName": "@account-abstraction/contracts/interfaces/PackedUserOperation.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@account-abstraction/contracts/core/Helpers.sol": {
+      "lastModificationDate": 1725101952615,
+      "contentHash": "d9a3c7fc04ae5f3fc8011d8792e8cb18",
+      "sourceName": "@account-abstraction/contracts/core/Helpers.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/external/ERC7579.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "82c6367089aebe796f1b05ee32e330fd",
+      "sourceName": "contracts/safe7579/external/ERC7579.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "erc7579/MSAFactory.sol",
+        "erc7579/MSAAdvanced.sol",
+        "erc7579/interfaces/IERC7579Account.sol",
+        "erc7579/interfaces/IERC7579Module.sol",
+        "erc7579/lib/ModeLib.sol",
+        "erc7579/lib/ExecutionLib.sol",
+        "erc7579/utils/Bootstrap.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/MSAFactory.sol": {
+      "lastModificationDate": 1725102025003,
+      "contentHash": "7d496a7c23f9aedf68ce1935bdf6da0b",
+      "sourceName": "erc7579/MSAFactory.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "solady/utils/LibClone.sol",
+        "./interfaces/IMSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "MSAFactory"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/MSAAdvanced.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "ea78c88200eefbf3d78acf74001ee7be",
+      "sourceName": "erc7579/MSAAdvanced.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./lib/ModeLib.sol",
+        "./lib/ExecutionLib.sol",
+        "./core/ExecutionHelper.sol",
+        "account-abstraction/interfaces/PackedUserOperation.sol",
+        "./interfaces/IERC7579Module.sol",
+        "./interfaces/IERC7579Account.sol",
+        "./interfaces/IMSA.sol",
+        "./core/ModuleManager.sol",
+        "./core/HookManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "MSAAdvanced"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/interfaces/IERC7579Module.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "947b00e8e716a3d971994f4c03d72f50",
+      "sourceName": "erc7579/interfaces/IERC7579Module.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "account-abstraction/interfaces/PackedUserOperation.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "IExecutor",
+        "IFallback",
+        "IHook",
+        "IModule",
+        "IValidator"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/lib/ModeLib.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "8f3be8414065f131fcbaccdef1f5577c",
+      "sourceName": "erc7579/lib/ModeLib.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC7579Account.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ModeLib"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/interfaces/IERC7579Account.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "723bdeccd6f36bd9b31a63eff01fe364",
+      "sourceName": "erc7579/interfaces/IERC7579Account.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../lib/ModeLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "IERC7579Account"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/lib/ExecutionLib.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "0e59e0d5397ec82a3afa16b9a3dc14dc",
+      "sourceName": "erc7579/lib/ExecutionLib.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC7579Account.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ExecutionLib"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/utils/Bootstrap.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "f476a424218d2b7a4aff4af73b06ba83",
+      "sourceName": "erc7579/utils/Bootstrap.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../core/ModuleManager.sol",
+        "../core/HookManager.sol",
+        "../interfaces/IERC7579Module.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "Bootstrap"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/interfaces/IMSA.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "8e73635ee46befaee24c1b232b2b2853",
+      "sourceName": "erc7579/interfaces/IMSA.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC7579Account.sol",
+        "./IERC4337Account.sol",
+        "../lib/ModeLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "IMSA"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/solady/src/utils/LibClone.sol": {
+      "lastModificationDate": 1725101956011,
+      "contentHash": "e0b7f2f1cb967ad278cf41dfe7ee7b81",
+      "sourceName": "solady/utils/LibClone.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "LibClone"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/interfaces/IERC4337Account.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "3a07182900e0e0947adaf6aedf3bf229",
+      "sourceName": "erc7579/interfaces/IERC4337Account.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "account-abstraction/interfaces/PackedUserOperation.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "IERC4337Account"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@ERC4337/account-abstraction/contracts/interfaces/PackedUserOperation.sol": {
+      "lastModificationDate": 1725101957323,
+      "contentHash": "6cdfe05be923cdc6051633ff1614e956",
+      "sourceName": "account-abstraction/interfaces/PackedUserOperation.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/core/ExecutionHelper.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "0f5307238b10748878c504c6facffac7",
+      "sourceName": "erc7579/core/ExecutionHelper.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC7579Account.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ExecutionHelper"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/core/ModuleManager.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "9d97865113448701deea98a3b7a2ccfd",
+      "sourceName": "erc7579/core/ModuleManager.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "sentinellist/SentinelList.sol",
+        "../lib/ModeLib.sol",
+        "./AccountBase.sol",
+        "../interfaces/IERC7579Module.sol",
+        "forge-std/interfaces/IERC165.sol",
+        "./Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "ModuleManager"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/core/HookManager.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "fde6301ce0e90309be84a3e5bd57e622",
+      "sourceName": "erc7579/core/HookManager.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ModuleManager.sol",
+        "../interfaces/IERC7579Account.sol",
+        "../interfaces/IERC7579Module.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "HookManager"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/sentinellist/src/SentinelList.sol": {
+      "lastModificationDate": 1725101956619,
+      "contentHash": "c401a33b703f378556918a411a76a698",
+      "sourceName": "sentinellist/SentinelList.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SentinelListLib"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/core/AccountBase.sol": {
+      "lastModificationDate": 1725102024999,
+      "contentHash": "6ac25fe1dd3aa32e6fef9c8622bd0e29",
+      "sourceName": "erc7579/core/AccountBase.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "AccountBase"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/erc7579/src/core/Receiver.sol": {
+      "lastModificationDate": 1725102025003,
+      "contentHash": "8ed2c2858697f9dfa289063aa65bee53",
+      "sourceName": "erc7579/core/Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "Receiver"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/forge-std/src/interfaces/IERC165.sol": {
+      "lastModificationDate": 1725101953531,
+      "contentHash": "90fe5e2e3ed432d6f3b408e7c9e8a739",
+      "sourceName": "forge-std/interfaces/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/interfaces/IERC7579Account.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "57062833ad7e229222e140a6a17d289d",
+      "sourceName": "contracts/safe7579/interfaces/IERC7579Account.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../lib/ModeLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "IERC7579Account",
+        "IERC7579AccountEvents"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/lib/ModeLib.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "2df90f45b285dc13d6172cacf33e7ebe",
+      "sourceName": "contracts/safe7579/lib/ModeLib.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ModeLib"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/integrations/ISwapRouter.sol": {
+      "lastModificationDate": 1728470334533,
+      "contentHash": "c72354954e66f3df470a4d2475edebd9",
+      "sourceName": "contracts/integrations/ISwapRouter.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IUniswapV3SwapCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ISwapRouter"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/integrations/SwapRouterConfigLibrary.sol": {
+      "lastModificationDate": 1731129343565,
+      "contentHash": "2a0d2b36be391af3438f3a05b4546a0c",
+      "sourceName": "contracts/integrations/SwapRouterConfigLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "SwapRouterConfigLibrary"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/integrations/IUniswapV3SwapCallback.sol": {
+      "lastModificationDate": 1725684738125,
+      "contentHash": "fef4edf1f0b5ab630ea2a99518e79ab3",
+      "sourceName": "contracts/integrations/IUniswapV3SwapCallback.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IUniswapV3SwapCallback"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/external/ERC7579.sol": {
+      "lastModificationDate": 1725101997655,
+      "contentHash": "7842e500f20176fe53a1c06adf6eaeaa",
+      "sourceName": "modulekit/external/ERC7579.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "erc7579/MSAFactory.sol",
+        "erc7579/MSAAdvanced.sol",
+        "erc7579/interfaces/IERC7579Account.sol",
+        "erc7579/interfaces/IMSA.sol",
+        "erc7579/interfaces/IERC7579Module.sol",
+        "erc7579/lib/ModeLib.sol",
+        "erc7579/lib/ExecutionLib.sol",
+        "erc7579/utils/Bootstrap.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/ERC4626.sol": {
+      "lastModificationDate": 1725101997651,
+      "contentHash": "95031b9b803485f0a35b76b1dd329a0f",
+      "sourceName": "modulekit/integrations/ERC4626.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "forge-std/interfaces/IERC4626.sol",
+        "../Accounts.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ERC4626Integration"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/ERC721.sol": {
+      "lastModificationDate": 1725101997651,
+      "contentHash": "c86d2e6cad519dedc69419a2118f24ec",
+      "sourceName": "modulekit/integrations/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "forge-std/interfaces/IERC721.sol",
+        "../Accounts.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ERC721Integration"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/ERC20.sol": {
+      "lastModificationDate": 1725101997631,
+      "contentHash": "f704f036f6101d2401cbaddd9b5acd5d",
+      "sourceName": "modulekit/integrations/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "forge-std/interfaces/IERC20.sol",
+        "../Accounts.sol",
+        "./ERC7579Exec.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ERC20Integration"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/uniswap/v3/Uniswap.sol": {
+      "lastModificationDate": 1725101998075,
+      "contentHash": "715899ea30d8a929f81d5395efb84b51",
+      "sourceName": "modulekit/integrations/uniswap/v3/Uniswap.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../helpers/MainnetAddresses.sol",
+        "../../interfaces/uniswap/v3/ISwapRouter.sol",
+        "../../interfaces/uniswap/v3/IUniswapV3Factory.sol",
+        "../../interfaces/uniswap/v3/IUniswapV3Pool.sol",
+        "forge-std/interfaces/IERC20.sol",
+        "../../ERC20.sol",
+        "../../../Accounts.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "UniswapV3Integration"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/forge-std/src/interfaces/IERC721.sol": {
+      "lastModificationDate": 1725101953547,
+      "contentHash": "efc26e7f9a2f76b68088c8760ceae2dc",
+      "sourceName": "forge-std/interfaces/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IERC721",
+        "IERC721Enumerable",
+        "IERC721Metadata",
+        "IERC721TokenReceiver"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/ERC7579Exec.sol": {
+      "lastModificationDate": 1725101997667,
+      "contentHash": "f35188ad8c795a321bbe51ebadf58a45",
+      "sourceName": "modulekit/integrations/ERC7579Exec.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../external/ERC7579.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.25"
+      ],
+      "artifacts": [
+        "ERC7579Exec"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/interfaces/uniswap/v3/ISwapRouter.sol": {
+      "lastModificationDate": 1725101997927,
+      "contentHash": "37c867ba45673f8c9971c29b5245ad1b",
+      "sourceName": "modulekit/integrations/interfaces/uniswap/v3/ISwapRouter.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IUniswapV3SwapCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ISwapRouter"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/interfaces/uniswap/v3/IUniswapV3Factory.sol": {
+      "lastModificationDate": 1725101997959,
+      "contentHash": "d2a44d34ab7264f1bf943aba6917614a",
+      "sourceName": "modulekit/integrations/interfaces/uniswap/v3/IUniswapV3Factory.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IUniswapV3Factory"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/interfaces/uniswap/v3/IUniswapV3Pool.sol": {
+      "lastModificationDate": 1725101997991,
+      "contentHash": "ef3f8ea25d9e313d6e49e8a3f4f6b141",
+      "sourceName": "modulekit/integrations/interfaces/uniswap/v3/IUniswapV3Pool.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IUniswapV3Pool"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/uniswap/helpers/MainnetAddresses.sol": {
+      "lastModificationDate": 1725101998035,
+      "contentHash": "9ea50ddcf2aa430e6c63f04310c622f9",
+      "sourceName": "modulekit/integrations/uniswap/helpers/MainnetAddresses.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@rhinestone/modulekit/src/integrations/interfaces/uniswap/v3/IUniswapV3SwapCallback.sol": {
+      "lastModificationDate": 1725101997995,
+      "contentHash": "83f5a8b5a4aede11848898ecde4140f7",
+      "sourceName": "modulekit/integrations/interfaces/uniswap/v3/IUniswapV3SwapCallback.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IUniswapV3SwapCallback"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud2x18/Casting.sol": {
+      "lastModificationDate": 1725101997627,
+      "contentHash": "22e4db923ea947ce6eaf2a2dc7e471a2",
+      "sourceName": "@prb/math/ud2x18/Casting.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../Common.sol",
+        "./Errors.sol",
+        "../sd1x18/Constants.sol",
+        "../sd1x18/ValueType.sol",
+        "../sd59x18/ValueType.sol",
+        "../ud60x18/ValueType.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud2x18/Constants.sol": {
+      "lastModificationDate": 1725101997663,
+      "contentHash": "d383666e8856a993ff033f223b254bd8",
+      "sourceName": "@prb/math/ud2x18/Constants.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud2x18/Errors.sol": {
+      "lastModificationDate": 1725101997707,
+      "contentHash": "b114bc752027098a098fe200d9600fa4",
+      "sourceName": "@prb/math/ud2x18/Errors.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud2x18/ValueType.sol": {
+      "lastModificationDate": 1725101997747,
+      "contentHash": "4bf392abdd32a2c1d83ad65c640ac7bd",
+      "sourceName": "@prb/math/ud2x18/ValueType.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Casting.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/Common.sol": {
+      "lastModificationDate": 1725101997651,
+      "contentHash": "89563f873c1358d97cab6d0f7aae4c07",
+      "sourceName": "@prb/math/Common.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd1x18/Constants.sol": {
+      "lastModificationDate": 1725101997659,
+      "contentHash": "febf41f26b4f7b4d71d8064ff0209d5c",
+      "sourceName": "@prb/math/sd1x18/Constants.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd1x18/ValueType.sol": {
+      "lastModificationDate": 1725101997747,
+      "contentHash": "f0d7fec0238b9623cd5432462fba5c7f",
+      "sourceName": "@prb/math/sd1x18/ValueType.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Casting.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd59x18/ValueType.sol": {
+      "lastModificationDate": 1725101997747,
+      "contentHash": "a8cbdd366dbe50e8199a8d59109c94ab",
+      "sourceName": "@prb/math/sd59x18/ValueType.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Casting.sol",
+        "./Helpers.sol",
+        "./Math.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud60x18/ValueType.sol": {
+      "lastModificationDate": 1725101997751,
+      "contentHash": "2cdd6d9529412185283eb7d955e95cbe",
+      "sourceName": "@prb/math/ud60x18/ValueType.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Casting.sol",
+        "./Helpers.sol",
+        "./Math.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd1x18/Casting.sol": {
+      "lastModificationDate": 1725101997583,
+      "contentHash": "fdf620cd0842991c797eef17265b5138",
+      "sourceName": "@prb/math/sd1x18/Casting.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../Common.sol",
+        "./Errors.sol",
+        "../sd59x18/ValueType.sol",
+        "../ud2x18/ValueType.sol",
+        "../ud60x18/ValueType.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd1x18/Errors.sol": {
+      "lastModificationDate": 1725101997699,
+      "contentHash": "01ce16eb254b596aa49047e21d548541",
+      "sourceName": "@prb/math/sd1x18/Errors.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd59x18/Casting.sol": {
+      "lastModificationDate": 1725101997615,
+      "contentHash": "cad7d3fe4dba2c04d2c7c481e6e0e210",
+      "sourceName": "@prb/math/sd59x18/Casting.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Errors.sol",
+        "../Common.sol",
+        "../sd1x18/Constants.sol",
+        "../sd1x18/ValueType.sol",
+        "../ud2x18/Constants.sol",
+        "../ud2x18/ValueType.sol",
+        "../ud60x18/ValueType.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd59x18/Helpers.sol": {
+      "lastModificationDate": 1725101997715,
+      "contentHash": "7d1863a86f1dd22889ee2c28737b3456",
+      "sourceName": "@prb/math/sd59x18/Helpers.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Casting.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd59x18/Math.sol": {
+      "lastModificationDate": 1725101997723,
+      "contentHash": "b56085288e036bccca9815b7783408c1",
+      "sourceName": "@prb/math/sd59x18/Math.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../Common.sol",
+        "./Errors.sol",
+        "./Constants.sol",
+        "./Helpers.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd59x18/Errors.sol": {
+      "lastModificationDate": 1725101997707,
+      "contentHash": "a420176814db8561486f5faa6c9a621d",
+      "sourceName": "@prb/math/sd59x18/Errors.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud60x18/Casting.sol": {
+      "lastModificationDate": 1725101997639,
+      "contentHash": "210f9ed8d979a7449cdb5b7adb003808",
+      "sourceName": "@prb/math/ud60x18/Casting.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Errors.sol",
+        "../Common.sol",
+        "../sd1x18/Constants.sol",
+        "../sd1x18/ValueType.sol",
+        "../sd59x18/Constants.sol",
+        "../sd59x18/ValueType.sol",
+        "../ud2x18/Constants.sol",
+        "../ud2x18/ValueType.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud60x18/Helpers.sol": {
+      "lastModificationDate": 1725101997719,
+      "contentHash": "f17f113af284236759bc9217ed544728",
+      "sourceName": "@prb/math/ud60x18/Helpers.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Casting.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud60x18/Math.sol": {
+      "lastModificationDate": 1725101997727,
+      "contentHash": "ac1aaa7063ffc63fcfa85e75d8a22268",
+      "sourceName": "@prb/math/ud60x18/Math.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../Common.sol",
+        "./Errors.sol",
+        "./Casting.sol",
+        "./Constants.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud60x18/Errors.sol": {
+      "lastModificationDate": 1725101997711,
+      "contentHash": "63cbb9480bb14e0824736d5c109aa7ce",
+      "sourceName": "@prb/math/ud60x18/Errors.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/sd59x18/Constants.sol": {
+      "lastModificationDate": 1725101997659,
+      "contentHash": "a3d7a431fc72a78ab3dc148a43df09c2",
+      "sourceName": "@prb/math/sd59x18/Constants.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud60x18/Constants.sol": {
+      "lastModificationDate": 1725101997667,
+      "contentHash": "282d93a05c3ed412d5a3b74a4ad05d6d",
+      "sourceName": "@prb/math/ud60x18/Constants.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@prb/math/src/ud60x18/Conversions.sol": {
+      "lastModificationDate": 1725101997683,
+      "contentHash": "7d6126ed4b68e5c939cf0af5cd237b66",
+      "sourceName": "@prb/math/ud60x18/Conversions.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Constants.sol",
+        "./Errors.sol",
+        "./ValueType.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/TestSafeSignerLaunchpad.sol": {
+      "lastModificationDate": 1725093066978,
+      "contentHash": "7aee9fe6aff096ae9ca87c0dae14c026",
+      "sourceName": "contracts/test/TestSafeSignerLaunchpad.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@account-abstraction/contracts/interfaces/IAccount.sol",
+        "@account-abstraction/contracts/interfaces/PackedUserOperation.sol",
+        "@account-abstraction/contracts/core/Helpers.sol",
+        "@safe-global/safe-contracts/contracts/libraries/SafeStorage.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0 <0.9.0"
+      ],
+      "artifacts": [
+        "IUniqueSignerFactory",
+        "SafeSetup",
+        "TestSafeSignerLaunchpad"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@account-abstraction/contracts/interfaces/IAccount.sol": {
+      "lastModificationDate": 1725101952627,
+      "contentHash": "1f8a384da0da6354fdd834d63b24dfd4",
+      "sourceName": "@account-abstraction/contracts/interfaces/IAccount.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./PackedUserOperation.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IAccount"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@safe-global/safe-contracts/contracts/libraries/SafeStorage.sol": {
+      "lastModificationDate": 1725101956855,
+      "contentHash": "d78dbd71bbd1ced06eda98a957185b58",
+      "sourceName": "@safe-global/safe-contracts/contracts/libraries/SafeStorage.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "SafeStorage"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/TestUniqueSigner.sol": {
+      "lastModificationDate": 1725093066978,
+      "contentHash": "a2c2e5b6521045de0fc40e8f9971c348",
+      "sourceName": "contracts/test/TestUniqueSigner.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@safe-global/safe-contracts/contracts/interfaces/ISignatureValidator.sol",
+        "./TestSafeSignerLaunchpad.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "TestUniqueSigner",
+        "TestUniqueSignerFactory"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@safe-global/safe-contracts/contracts/interfaces/ISignatureValidator.sol": {
+      "lastModificationDate": 1725101956739,
+      "contentHash": "fb4f45d1df906c3ce2f2cea981287ac5",
+      "sourceName": "@safe-global/safe-contracts/contracts/interfaces/ISignatureValidator.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ISignatureValidator",
+        "ISignatureValidatorConstants"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/TestSingletonSigner.sol": {
+      "lastModificationDate": 1725093066978,
+      "contentHash": "907b690438defd8562f2f80f76be798b",
+      "sourceName": "contracts/test/TestSingletonSigner.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@safe-global/safe-contracts/contracts/interfaces/ISignatureValidator.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "TestSingletonSigner",
+        "TestSingletonSignerFactory"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@account-abstraction/contracts/interfaces/IAggregator.sol": {
+      "lastModificationDate": 1725101952631,
+      "contentHash": "ea70aa8db36795540523cebf73f66469",
+      "sourceName": "@account-abstraction/contracts/interfaces/IAggregator.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./PackedUserOperation.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IAggregator"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@account-abstraction/contracts/interfaces/IEntryPoint.sol": {
+      "lastModificationDate": 1725101952643,
+      "contentHash": "d201c25e2806de5038e53c646f93810c",
+      "sourceName": "@account-abstraction/contracts/interfaces/IEntryPoint.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./PackedUserOperation.sol",
+        "./IStakeManager.sol",
+        "./IAggregator.sol",
+        "./INonceManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IEntryPoint"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@account-abstraction/contracts/interfaces/IStakeManager.sol": {
+      "lastModificationDate": 1725101952699,
+      "contentHash": "8a37b39cb2b2d53efcd76e8d6af616ff",
+      "sourceName": "@account-abstraction/contracts/interfaces/IStakeManager.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IStakeManager"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@account-abstraction/contracts/interfaces/INonceManager.sol": {
+      "lastModificationDate": 1725101952651,
+      "contentHash": "2865a605d4aece6b0d511f573003d167",
+      "sourceName": "@account-abstraction/contracts/interfaces/INonceManager.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "INonceManager"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/interfaces/IERC1271.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "4298c0e98f3dafd02a4a5b309bd4f5c2",
+      "sourceName": "contracts/safe7579/interfaces/IERC1271.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC1271"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/ISafe7579.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "c7acf06f2fbd768337aabe9d2192f306",
+      "sourceName": "contracts/safe7579/ISafe7579.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./DataTypes.sol",
+        "./interfaces/IERC7579Account.sol",
+        "./lib/ModeLib.sol",
+        "@account-abstraction/contracts/core/UserOperationLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ISafe7579"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/DataTypes.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "4e596aa86f39d3b436c76fb69ff135c0",
+      "sourceName": "contracts/safe7579/DataTypes.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IERC7484.sol",
+        "./lib/ModeLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/interfaces/IERC7484.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "3a7564f8b83cf9a71ff7a96f72e22941",
+      "sourceName": "contracts/safe7579/interfaces/IERC7484.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC7484"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/interfaces/ISafe.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "d79bba10fc1fdc77723c77926d54d894",
+      "sourceName": "contracts/safe7579/interfaces/ISafe.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ISafe"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/validator/SessionValidator.sol": {
+      "lastModificationDate": 1728817592515,
+      "contentHash": "25ee68d016492a1c6ba7b88a8bfa3b9e",
+      "sourceName": "contracts/validator/SessionValidator.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "modulekit/Integrations.sol",
+        "../integrations/Uniswap.sol",
+        "forge-std/interfaces/IERC20.sol",
+        "forge-std/interfaces/IERC4626.sol",
+        "../module-bases/ERC7579ValidatorBase.sol",
+        "../safe7579/interfaces/IERC7579Account.sol",
+        "@account-abstraction/contracts/core/UserOperationLib.sol",
+        "solady/utils/SignatureCheckerLib.sol",
+        "solady/utils/ECDSA.sol",
+        "../safe7579/lib/ExecutionLib.sol",
+        "../safe7579/lib/ModeLib.sol",
+        "../module-bases/ERC7579ExecutorBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "SessionValidator"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/utils/DCUtil.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "2fabfed2862bd67cba62d4e2218ce784",
+      "sourceName": "contracts/safe7579/utils/DCUtil.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC7579Account.sol",
+        "../interfaces/IERC7579Module.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.22"
+      ],
+      "artifacts": [
+        "BatchedExecUtil",
+        "ModuleInstallUtil",
+        "Safe7579DCUtil"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/interfaces/IERC7579Module.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "c3ba288f501e361bf3e259de4b20c8d4",
+      "sourceName": "contracts/safe7579/interfaces/IERC7579Module.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@account-abstraction/contracts/interfaces/PackedUserOperation.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "IExecutor",
+        "IFallback",
+        "IHook",
+        "IModule",
+        "IValidator"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/module-bases/ERC7579HookDestruct.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "c4617857948c567458f0c54d2a057253",
+      "sourceName": "contracts/module-bases/ERC7579HookDestruct.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ERC7579HookBase.sol",
+        "../safe7579/interfaces/IERC7579Account.sol",
+        "erc7579/lib/ExecutionLib.sol",
+        "erc7579/lib/ModeLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ERC7579HookDestruct"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/module-bases/ERC7579HookBase.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "cd5b7e57f407ccba328387f7903db3df",
+      "sourceName": "contracts/module-bases/ERC7579HookBase.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../safe7579/external/ERC7579.sol",
+        "./ERC7579ModuleBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ERC7579HookBase"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/sentinellist/src/SentinelList4337.sol": {
+      "lastModificationDate": 1725101956623,
+      "contentHash": "aefc9a63c285517d82174f00cb9a374a",
+      "sourceName": "sentinellist/SentinelList4337.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SentinelList4337Lib"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@safe-global/safe-contracts/contracts/handler/HandlerContext.sol": {
+      "lastModificationDate": 1725101956683,
+      "contentHash": "af8eef3a1810869706cf2a0f6905ef6d",
+      "sourceName": "@safe-global/safe-contracts/contracts/handler/HandlerContext.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "HandlerContext"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1725101998947,
+      "contentHash": "896f68942c3a20e9ae3c3c5bfd3add54",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/interfaces/ISafeOp.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "13c9f4bdcd9f7cd0e2e0cf4425d3bd36",
+      "sourceName": "contracts/safe7579/interfaces/ISafeOp.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "ISafeOp"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/SafeMock.sol": {
+      "lastModificationDate": 1725093066978,
+      "contentHash": "1861a7f51107e4cded7f344bff3a6509",
+      "sourceName": "contracts/test/SafeMock.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@account-abstraction/contracts/interfaces/IAccount.sol",
+        "@account-abstraction/contracts/core/UserOperationLib.sol",
+        "@account-abstraction/contracts/interfaces/PackedUserOperation.sol",
+        "@account-abstraction/contracts/core/Helpers.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Safe4337Mock",
+        "SafeMock"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/interfaces/Safe.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "1e37d0c87e39d543790f54052881d1c6",
+      "sourceName": "contracts/safe7579/interfaces/Safe.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ISafe"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/MockTarget.sol": {
+      "lastModificationDate": 1725093066978,
+      "contentHash": "ee29e5e896c37dbe9350de7ed1d98de3",
+      "sourceName": "contracts/test/MockTarget.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "MockTarget"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/SafeContracts.sol": {
+      "lastModificationDate": 1725093066978,
+      "contentHash": "0016e95e1ad9da3c0fec795f3e6bae32",
+      "sourceName": "contracts/test/SafeContracts.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@safe-global/safe-contracts/contracts/proxies/SafeProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@safe-global/safe-contracts/contracts/proxies/SafeProxyFactory.sol": {
+      "lastModificationDate": 1725101956855,
+      "contentHash": "abe7e37b7ebc6364ba5a0c0611c78a1c",
+      "sourceName": "@safe-global/safe-contracts/contracts/proxies/SafeProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SafeProxy.sol",
+        "./IProxyCreationCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "SafeProxyFactory"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@safe-global/safe-contracts/contracts/proxies/SafeProxy.sol": {
+      "lastModificationDate": 1725101956847,
+      "contentHash": "d4bcb5199c68209d68cb38cbb3216e5d",
+      "sourceName": "@safe-global/safe-contracts/contracts/proxies/SafeProxy.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "IProxy",
+        "SafeProxy"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/node_modules/@safe-global/safe-contracts/contracts/proxies/IProxyCreationCallback.sol": {
+      "lastModificationDate": 1725101956739,
+      "contentHash": "40fdc07db481d841d0a4353a34e071ef",
+      "sourceName": "@safe-global/safe-contracts/contracts/proxies/IProxyCreationCallback.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SafeProxy.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "IProxyCreationCallback"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/TestReverter.sol": {
+      "lastModificationDate": 1725093066978,
+      "contentHash": "8c22706b8adf45fcf609d0840da926ee",
+      "sourceName": "contracts/test/TestReverter.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "TestReverter"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/TestToken.sol": {
+      "lastModificationDate": 1725093066978,
+      "contentHash": "bc18ea2cdf3a9031127e019bcd71995b",
+      "sourceName": "contracts/test/TestToken.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "HariWillibaldToken"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1725093758112,
+      "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol": {
+      "lastModificationDate": 1725093758148,
+      "contentHash": "4cbcb1f6d01e01a02b6407bb67a78400",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Permit.sol",
+        "../ERC20.sol",
+        "../../../utils/cryptography/ECDSA.sol",
+        "../../../utils/cryptography/EIP712.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1725093757480,
+      "contentHash": "f07feb4a44b1a4872370da5aa70e8e46",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1725093758460,
+      "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1725093758460,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1725093757484,
+      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1725093757584,
+      "contentHash": "d822a8a9468649cab463f29f5decf5cc",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/cryptography/EIP712.sol": {
+      "lastModificationDate": 1725093757600,
+      "contentHash": "459aeb9cc3fc3c6d67d30ffefb724aba",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/EIP712.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol",
+        "../ShortStrings.sol",
+        "../../interfaces/IERC5267.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+      "lastModificationDate": 1725093758464,
+      "contentHash": "525fcdad8d171312933f47baf01d1ed8",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1725093759040,
+      "contentHash": "48686fc32a22a3754b8e63321857dd2a",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol",
+        "./math/SignedMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1725093758700,
+      "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1725093759016,
+      "contentHash": "9488ebd4daacfee8ad04811600d7d061",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/interfaces/IERC5267.sol": {
+      "lastModificationDate": 1725093758488,
+      "contentHash": "b1756048024350a162c3be27c04aa652",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC5267.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC5267"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/ShortStrings.sol": {
+      "lastModificationDate": 1725093758944,
+      "contentHash": "8dde288da49722a70f34ee369be4bfba",
+      "sourceName": "@openzeppelin/contracts/utils/ShortStrings.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.8"
+      ],
+      "artifacts": [
+        "ShortStrings"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
+      "lastModificationDate": 1725093759024,
+      "contentHash": "682f7dd1f2e1147c8390e7575deceb2d",
+      "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1725093758940,
+      "contentHash": "1b5d667d3740d866eca0352758e59827",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../extensions/IERC20Permit.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1725093757420,
+      "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/interfaces/IERC4626.sol": {
+      "lastModificationDate": 1725093758484,
+      "contentHash": "97b05d54ca57043277fa79b29a968da9",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC4626.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/IERC20.sol",
+        "../token/ERC20/extensions/IERC20Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC4626"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC4626.sol": {
+      "lastModificationDate": 1725093758220,
+      "contentHash": "6a49e30f074c0972eee2950b9c1647a1",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC4626.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../utils/SafeERC20.sol",
+        "../../../interfaces/IERC4626.sol",
+        "../../../utils/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC4626"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/test/TestVault.sol": {
+      "lastModificationDate": 1727519557859,
+      "contentHash": "dca5cbed088784d24675e26f284fb556",
+      "sourceName": "contracts/test/TestVault.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC4626.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestVault"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/validator/ISessionKey.sol": {
+      "lastModificationDate": 1727443622144,
+      "contentHash": "cd111b91fe136a88befa48f8b629d27a",
+      "sourceName": "contracts/validator/ISessionKey.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/validator/SessionKey.sol": {
+      "lastModificationDate": 1728111028990,
+      "contentHash": "53fa2cba23a947e1d02ebc717e87866e",
+      "sourceName": "contracts/validator/SessionKey.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/Safe7579.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "af38425f3b28e68fca145e0cdd3d6f2c",
+      "sourceName": "contracts/safe7579/Safe7579.sol",
+      "solcConfig": {
+        "version": "0.8.23",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IERC7579Account.sol",
+        "./lib/ModeLib.sol",
+        "./lib/ExecutionLib.sol",
+        "./interfaces/IERC7579Module.sol",
+        "./utils/DCUtil.sol",
+        "./core/AccessControl.sol",
+        "./core/Initializer.sol",
+        "./interfaces/ISafeOp.sol",
+        "./interfaces/ISafe.sol",
+        "./ISafe7579.sol",
+        "@account-abstraction/contracts/core/UserOperationLib.sol",
+        "@account-abstraction/contracts/core/Helpers.sol",
+        "@account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "./interfaces/IERC1271.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "EIP712",
+        "Safe7579"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/core/AccessControl.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "ae5bf4fe7ec9b181219729c76367394d",
+      "sourceName": "contracts/safe7579/core/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.23",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@safe-global/safe-contracts/contracts/handler/HandlerContext.sol",
+        "erc7579/core/AccountBase.sol"
+      ],
+      "versionPragmas": [
+        "0.8.23"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/core/Initializer.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "6f26b7d19f5f953d1d71ba617b6cbb91",
+      "sourceName": "contracts/safe7579/core/Initializer.sol",
+      "solcConfig": {
+        "version": "0.8.23",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ISafe7579.sol",
+        "../DataTypes.sol",
+        "./ModuleManager.sol",
+        "../interfaces/IERC7484.sol",
+        "sentinellist/SentinelList4337.sol",
+        "sentinellist/SentinelList.sol"
+      ],
+      "versionPragmas": [
+        "0.8.23"
+      ],
+      "artifacts": [
+        "Initializer"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/core/ModuleManager.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "d36e5f8d0004c955d1cd928ca29d674b",
+      "sourceName": "contracts/safe7579/core/ModuleManager.sol",
+      "solcConfig": {
+        "version": "0.8.23",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "sentinellist/SentinelList.sol",
+        "sentinellist/SentinelList4337.sol",
+        "../interfaces/IERC7579Module.sol",
+        "../external/ERC7579.sol",
+        "../interfaces/ISafe.sol",
+        "../ISafe7579.sol",
+        "../DataTypes.sol",
+        "../utils/DCUtil.sol",
+        "./RegistryAdapter.sol",
+        "erc7579/core/Receiver.sol",
+        "./AccessControl.sol",
+        "../lib/ModeLib.sol",
+        "../interfaces/IERC7579Module.sol"
+      ],
+      "versionPragmas": [
+        "0.8.23"
+      ],
+      "artifacts": [
+        "ModuleManager"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/core/RegistryAdapter.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "bbbbb430808579a29ce50934a9851c63",
+      "sourceName": "contracts/safe7579/core/RegistryAdapter.sol",
+      "solcConfig": {
+        "version": "0.8.23",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC7484.sol",
+        "./ExecutionHelper.sol",
+        "../interfaces/ISafe.sol",
+        "../ISafe7579.sol"
+      ],
+      "versionPragmas": [
+        "0.8.23"
+      ],
+      "artifacts": [
+        "RegistryAdapter"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/core/ExecutionHelper.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "e488b8b1352e5f4598b20ac1eecb52a1",
+      "sourceName": "contracts/safe7579/core/ExecutionHelper.sol",
+      "solcConfig": {
+        "version": "0.8.23",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SetupDCUtil.sol",
+        "../utils/DCUtil.sol",
+        "../interfaces/IERC7579Account.sol",
+        "../interfaces/ISafe.sol"
+      ],
+      "versionPragmas": [
+        "0.8.23"
+      ],
+      "artifacts": [
+        "ExecutionHelper"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/safe7579/core/SetupDCUtil.sol": {
+      "lastModificationDate": 1725093066974,
+      "contentHash": "39316ad9fddca476bdc8f3579b66d285",
+      "sourceName": "contracts/safe7579/core/SetupDCUtil.sol",
+      "solcConfig": {
+        "version": "0.8.23",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/DCUtil.sol"
+      ],
+      "versionPragmas": [
+        "0.8.23"
+      ],
+      "artifacts": [
+        "Safe7579DCUtilSetup"
+      ]
+    },
+    "/home/koshik/Documents/repos/brewit/modules/module/contracts/AutoSwap/AutoSwapExecutor.sol": {
+      "lastModificationDate": 1731765826992,
+      "contentHash": "b44b0b1ea14c9cbc24babbfff6c4f2de",
+      "sourceName": "contracts/AutoSwap/AutoSwapExecutor.sol",
+      "solcConfig": {
+        "version": "0.8.25",
+        "settings": {
+          "evmVersion": "paris",
+          "viaIR": true,
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "modulekit/Accounts.sol",
+        "modulekit/Integrations.sol",
+        "../integrations/Uniswap.sol",
+        "forge-std/interfaces/IERC20.sol",
+        "forge-std/interfaces/IERC4626.sol",
+        "../module-bases/ERC7579ValidatorBase.sol",
+        "@account-abstraction/contracts/core/UserOperationLib.sol",
+        "@prb/math/UD2x18.sol",
+        "@prb/math/UD60x18.sol",
+        "solady/utils/SignatureCheckerLib.sol",
+        "solady/utils/ECDSA.sol",
+        "../safe7579/lib/ExecutionLib.sol",
+        "../module-bases/ERC7579ExecutorBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.23"
+      ],
+      "artifacts": [
+        "AutoSwapExecutor"
+      ]
+    }
+  }
+}

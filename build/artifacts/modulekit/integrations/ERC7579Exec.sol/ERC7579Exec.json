@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ERC7579Exec",
+  "sourceName": "modulekit/integrations/ERC7579Exec.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea2646970667358221220dd1c2b64782388050ef687651181f15120277cefbd592ffb3c451074ea1404a364736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea2646970667358221220dd1c2b64782388050ef687651181f15120277cefbd592ffb3c451074ea1404a364736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SwapRouterConfigLibrary",
+  "sourceName": "contracts/integrations/SwapRouterConfigLibrary.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea2646970667358221220dc486019416e7367680f88024da009a1737595912ec47baf20cd539a4ca8e0a864736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea2646970667358221220dc486019416e7367680f88024da009a1737595912ec47baf20cd539a4ca8e0a864736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

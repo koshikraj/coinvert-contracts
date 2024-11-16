@@ -1,0 +1,54 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ExecutionHelper",
+  "sourceName": "contracts/safe7579/core/ExecutionHelper.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ExecutionFailed",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "contract ISafe",
+          "name": "safe",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "numberInBatch",
+          "type": "uint256"
+        }
+      ],
+      "name": "TryExecutionFailed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "contract ISafe",
+          "name": "safe",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool[]",
+          "name": "success",
+          "type": "bool[]"
+        }
+      ],
+      "name": "TryExecutionsFailed",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
